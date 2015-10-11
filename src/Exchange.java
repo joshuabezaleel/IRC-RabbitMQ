@@ -1,13 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import com.rabbitmq.client.*;
 
-/**
- *
- * @author asus
- */
 public class Exchange {
+    private Connection connection;
+    private static ConnectionFactory factory = new ConnectionFactory();
+    private Channel channel;
     
+    
+    public static final String DEFAULT_HOST = "localhost";
+    public static final int DEFAULT_PORT = 5672;
+
+    private static final String QUEUE_NAME = "nameQueue";
+    
+    public static void main(String[] args){
+        factory = new ConnectionFactory();
+    }
 }

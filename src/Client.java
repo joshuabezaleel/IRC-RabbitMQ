@@ -114,5 +114,9 @@ public class Client {
     private static void handleBroadcast(String userName, String message){
         
     }
+    
+    private static void anonNick() {
+        
+    }
 
 }
